@@ -17,7 +17,7 @@ public class HelloWorldController {
     public String helloWorld(){
         return helloWorldService.helloWorld("Victor");
     }
-    @PostMapping("")
+    @PostMapping("/post")
     public String helloWorldPost(@RequestBody User body){
 
         return "Seu Nome: " + body.name + " Seu Email: "+ body.email;
